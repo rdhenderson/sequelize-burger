@@ -18,6 +18,7 @@
     "password": "bxv4bkcb2a0l69ik",
     "database": "burgers",
     "host": "mgs0iaapcj3p9srz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "use_env_variable": "DATABASE_URL"
   }
 }
