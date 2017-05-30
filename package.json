@@ -1,36 +1,31 @@
 {
-  "name": "burger",
+  "name": "sequelize-burger",
   "version": "1.0.0",
-  "description": "burger eating single page application project",
+  "description": "sequelized burger joint homework",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall" : "node initDbScript.js",
+    "test": "mocha",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rdhenderson/burger.git"
+    "url": "git+https://github.com/rdhenderson/sequelize-burger.git"
   },
-  "keywords": [
-    "express",
-    "handlebars",
-    "orm",
-    "bootcamp"
-  ],
-  "author": "reid.henderson@gmail.com",
+  "author": "Reid Henderson <reid.henderson@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rdhenderson/burger/issues"
+    "url": "https://github.com/rdhenderson/sequelize-burger/issues"
   },
-  "homepage": "https://github.com/rdhenderson/burger#readme",
+  "homepage": "https://github.com/rdhenderson/sequelize-burger#readme",
   "dependencies": {
-    "body-parser": "^1.17.1",
-    "express": "^4.15.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
-    "method-override": "^2.3.8",
+    "method-override": "^2.3.9",
     "mysql": "^2.13.0",
     "sequelize": "^3.30.4"
   },
-  "devDependencies": {}
+  "engines" : {
+    "node" : "7.7.2"
+  }
 }
