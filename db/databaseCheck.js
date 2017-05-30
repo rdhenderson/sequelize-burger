@@ -1,13 +1,16 @@
 var mysql = require('mysql');
 
 module.exports = function(dbName) {
-	this.connection = mysql.createConnection(
-	    {
-	      host     : 'localhost',
-	      user     : 'root',
-	      password : ''
-	      // database : 'dbName',
-	    }
+	const localDB = {
+			 host     : 'localhost',
+			 user     : 'root',
+			 password : ''
+	};
+
+	let database = process.env.JAWSDB_URL || localDB;
+
+	this.connection = mysql.createConnection(database);
+
 	);
 	//Get database names and call init to check for dbName db.
 	this.connection.query('SHOW DATABASES', (err, results) => {
