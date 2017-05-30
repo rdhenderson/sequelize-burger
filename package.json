@@ -1,0 +1,36 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "burger eating single page application project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall" : "node initDbScript.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdhenderson/burger.git"
+  },
+  "keywords": [
+    "express",
+    "handlebars",
+    "orm",
+    "bootcamp"
+  ],
+  "author": "reid.henderson@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rdhenderson/burger/issues"
+  },
+  "homepage": "https://github.com/rdhenderson/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.8",
+    "mysql": "^2.13.0",
+    "sequelize": "^3.30.4"
+  },
+  "devDependencies": {}
+}
