@@ -1,0 +1,10 @@
+<h1>Eat A Burger - Menu</h1>
+
+<table>
+  {{#each burgers}}
+  <tr>
+    <td> {{this.name}} </td>
+    <td> <button id={{this.id}} class="btn btn-primary">Devour It!</button></td>
+  </tr>
+  {{/each}}
+</table>
